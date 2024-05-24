@@ -1,0 +1,8 @@
+@media (max-width:600px) {
+   .nav{
+    display: none;
+   }
+   .burger-btn{
+    display: block;
+   }
+}

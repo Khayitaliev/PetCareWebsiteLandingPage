@@ -87,7 +87,8 @@ img{
     height: auto;
 }
 
-button{
+button,
+.burger-btn{
     cursor: pointer;
 }
 
@@ -114,13 +115,14 @@ button{
 }
 
 .nav__list{
-    gap: 0 55px;
+    gap: clamp(10px,3vw,50px);
 }
 
 .header__brand{
-    font-size: clamp(1.5rem,3vw,2.5rem);
+    font-size: clamp(1.8rem,3vw,2.5rem);
     font-weight: 900;
 }
+
 .header__brand{
     color: var(--cl-orange);
 }
@@ -133,6 +135,43 @@ button{
     color: var(--cl-dark);
 }
 
+.list__link{
+    position: relative;
+    font-size: clamp(0.8rem,2vw,1.25rem);
+}
+
+.list__link::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background:  var(--cl-dark);
+    top: 25px;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.list__link:hover::before{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
 .button{
     padding: 17px 35px;
     border: none;
@@ -142,9 +181,39 @@ button{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     color: var(--cl-white);
+    box-shadow: 0px 10px 25px 0px rgba(255, 124, 84, 0.3);
+}
+.header__buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
 }
 
 .header__btn{
     background: var(--cl-orange-gradient);
 }
 
+.header__btn{
+    font-size: clamp(0.8rem,2vw,1.25rem);
+}
+
+.burger-btn{
+    display: none;
+}
+
+.burger-btn span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 1rem;
+    background: var(--cl-orange-gradient);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.burger-btn span:nth-child(2){
+    margin: 5px 0;
+}
