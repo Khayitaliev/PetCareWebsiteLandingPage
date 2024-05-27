@@ -103,7 +103,8 @@ img{
     padding: 0 5px;
 }
 
-.header__wrapper{
+.header__wrapper,
+.hero__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
