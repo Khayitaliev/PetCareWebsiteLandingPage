@@ -90,12 +90,12 @@ button,
 .burger-btn{
     cursor: pointer;
 }
+
 img{
     display: block;
     max-width: 100%;
     height: auto;
 }
-
 
 .container{
     max-width: 1490px;
@@ -143,6 +143,7 @@ img{
 .list__link{
     font-size: clamp(0.8rem,2vw,1.25rem);
     position: relative;
+    font-weight: 600;
 }
 
 .list__link::before{
