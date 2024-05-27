@@ -8,4 +8,20 @@
     .header__btn{
         display: none;
     }
+    .hero__wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .banner__img{
+        width: 300px;
+    }
+    .hero__content{
+        text-align: center;
+    }
+    .hero__buttons{
+        justify-content: center;
+    }
+    .hero__text{
+        max-width: 400px;
+    }
 }
