@@ -39,6 +39,6 @@
         display: block;
     }
     .list__link::before{
-        top: 15px;
+        top: 20px;
     }
 }
