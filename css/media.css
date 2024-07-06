@@ -41,4 +41,22 @@
     .list__link::before{
         top: 20px;
     }
+    .hero__wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .hero__buttons{
+        justify-content: center;
+    }
+    .hero__text{
+        max-width: 350px;
+    }
+    .hero__img{
+        width: 300px;
+    }
+    .hero__content{
+        text-align: center;
+    }
 }

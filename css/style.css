@@ -228,4 +228,25 @@ img{
     margin: 5px 0;
 }
 
+.hero__content{
+    flex-basis: 630px;
+}
 
+.hero__buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.hero__title{
+    font-size: clamp(3rem,6vw,6.25rem);
+    font-weight: 800;
+}
+
+.hero__text{
+    font-size: clamp(0.8rem,3vw,1.3rem);
+}
+
+.hero__img{
+    width: 600px;
+}
