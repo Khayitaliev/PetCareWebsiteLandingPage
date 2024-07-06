@@ -38,4 +38,7 @@
     .nav__btn{
         display: block;
     }
+    .list__link::before{
+        top: 15px;
+    }
 }
